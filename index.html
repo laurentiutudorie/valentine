@@ -88,7 +88,7 @@
 
   <div class="background"></div>
 
-  <div class="card">
+  <div class="card" id="card">
     <h2 id="question"></h2>
     <button id="yes">YES</button>
     <button id="no">NO</button>
@@ -179,11 +179,11 @@ function startConfetti() {
 yesBtn.addEventListener("click", () => {
   startConfetti();
 
-  document.body.innerHTML = `
-    <div class="background"></div>
+const card = document.getElementById("card");
 
-    <div style="text-align:center; z-index:1;">
-      <h1>YAY!!! 💘😍</h1>
+
+  card.innerHTML = `
+      <h1>URAAA 💘😍</h1>
 
       <img 
         src="robosigaza.jpeg"
@@ -191,7 +191,7 @@ yesBtn.addEventListener("click", () => {
         style="max-width:280px; margin:20px 0;"
       >
 
-      <p>I knew you’d say yes 😘</p>
+      <p>Eram convins ca vei spune DA 😘</p>
     </div>
 
     <canvas id="confetti"></canvas>
