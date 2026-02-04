@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Laura, will you be my Valentine? 💘</title>
+  <title>Iuba, will you be my Valentine? 💘</title>
 
   <style>
     body {
@@ -43,7 +43,7 @@
 }
 
 .pulse {
-  animation: pulse 1.2s infinite;
+  animation: pulse 0.9s infinite;
 }
 
   </style>
@@ -60,13 +60,13 @@
   <!-- SCRIPT LA FINAL = SAFE -->
   <script>
     const params = new URLSearchParams(window.location.search);
-    const name = params.get("Laura") || "you";
+    const name = params.get("Iuba") || "you";
 
     const question = document.getElementById("question");
     const noBtn = document.getElementById("no");
     const yesBtn = document.getElementById("yes");
 
-    question.innerText = `${"Laura"}, will you be my Valentine? 💖`;
+    question.innerText = `${"Iuba"}, will you be my Valentine? 💖`;
 
     noBtn.addEventListener("mouseover", () => {
       const x = Math.random() * 200;
@@ -78,16 +78,16 @@
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `
     <div style="text-align:center;">
-      <h1>YAY!!! 💘😍</h1>
+      <h1>Uraaa!!! 💘😍</h1>
 
       <img 
-        src="meandwifie.jpeg"
+        src="robosigaza.jpeg"
         alt="Love"
         class="pulse"
         style="max-width:280px; margin:20px 0;"
       >
 
-      <p>Stiam eu ca vei spune DA! 😘</p>
+      <p>Aveam o presimtire ca vei spune DA 😘</p>
     </div>
   `;
 });
