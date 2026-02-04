@@ -5,16 +5,27 @@
   <title>Iuba, will you be my Valentine? 💘</title>
 
   <style>
-    body {
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      font-family: Arial;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-    }
+   body {
+  background-image: url("fundal.jpg");
+  background-size: cover;       /* umple tot ecranul */
+  background-position: center;  /* centrat */
+  background-repeat: no-repeat; /* fără repetare */
 
+  font-family: Arial;
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+    
     .card {
       background: white;
       padding: 30px;
