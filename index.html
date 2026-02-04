@@ -5,20 +5,37 @@
   <title>Iuba, will you be my Valentine? 💘</title>
 
   <style>
-   body {
-  background-image: url("fundal.jpg");
-  background-size: cover;       /* umple tot ecranul */
-  background-position: center;  /* centrat */
-  background-repeat: no-repeat; /* fără repetare */
-
+  body {
   font-family: Arial;
   height: 100vh;
   margin: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
+.background {
+  position: fixed;
+  inset: 0;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  transform: scale(1.1); /* evită marginile albe după blur */
+  z-index: -1;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  width: 320px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
 
 .overlay {
   position: fixed;
@@ -61,6 +78,8 @@
 </head>
 
 <body>
+
+  <div class="background"></div>
 
   <div class="card">
     <h2 id="question"></h2>
